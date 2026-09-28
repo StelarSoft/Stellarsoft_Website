@@ -49,7 +49,7 @@ menu
 </div></div>
     </nav>
     <section style="width: 100%;top: 0;height: 933px;position: absolute;z-index: 0;background: url(&quot;assets/img/stars.png&quot;), linear-gradient(black 45%, var(--bs-primary) 185%), var(--bs-pink);"></section>
-    <section style="min-height: 500px;z-index: 1;position: relative;">
+    <section id="hero-logo-section" style="min-height: 500px;z-index: 1;position: relative;">
         <div class="text-center d-flex d-xxl-flex flex-row justify-content-center align-items-center flex-nowrap justify-content-xxl-center align-items-xxl-center">
     <lottie-player id="logo-scroll" src="assets/js/logo0.5.json"  background="transparent"  speed="1" style="width: 100%; height: 608px; z-index: -999; "  autoplay></lottie-player></div>
     </section>
@@ -60,13 +60,13 @@ menu
         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill1"></path>
     </svg>
 </div></section>
-    <section class="text-center" style="min-height: 326px;z-index: 1;position: relative;background: #000407;padding: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;margin: -15px;padding-top: 52px;margin-right: 0;margin-bottom: 0;margin-left: 0;">
+    <section class="text-center" id="hero-title-section" style="min-height: 326px;z-index: 1;position: relative;background: #000407;padding: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;margin: -15px;padding-top: 52px;margin-right: 0;margin-bottom: 0;margin-left: 0;">
         <h1 class="text-center" id="title-scroll" style="color: var(--bs-gray-100);width: 100%;margin: 34px 0px 8px;margin-top: 59px;font-size: 49.88px;">STELLARSOFT</h1>
     </section>
-    <section class="text-start" id="section-who" style="min-height: 869px;width: 100%;margin-top: -71px;background: #000407;z-index: 2;position: relative;margin-bottom: -5px;height: 883px;">
+    <section class="text-start" id="section-who" style="width: 100%;margin-top: -71px;background: #000407;z-index: 2;position: relative;margin-bottom: -5px;padding-top: 40px;padding-bottom: 220px;">
         <div style="z-index: 1;">
             <h2 class="display-5 text-center" data-aos="fade-up" data-aos-duration="850" data-aos-delay="50" data-aos-once="true" style="margin-top: 17px;color: var(--bs-gray-400);line-height: 1.2;text-align: center;">Who Are We?</h2>
-            <span class="section-eyebrow" data-aos="fade-up" data-aos-duration="850" data-aos-delay="50">Data Engineering &middot; Cloud Data Platforms &middot; Data Modernization</span>
+            <span class="section-eyebrow" data-aos="fade-up" data-aos-duration="850" data-aos-delay="50">Data Engineering &middot; Cloud Data Platforms &middot; Analytics &amp; Consulting</span>
             <p class="section-lead" data-aos="fade-up" data-aos-duration="850" data-aos-delay="50" id="first-para-intro" style="padding: 0 24px;position: relative;z-index: 1;">Stellarsoft helps organizations design, modernize, and operate reliable cloud data platforms. We work with teams that need to migrate legacy data environments, build scalable data pipelines, improve reliability and data quality, or add experienced data engineering capacity to an existing team &mdash; with hands-on expertise across AWS and Microsoft Azure.</p>
         </div><div class="custom-shape-divider-bottom-1643855740">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -76,9 +76,9 @@ menu
     </svg>
 </div>
     </section>
-    <section class="services-section-main" style="z-index: 2;background: #022a54;position: relative;padding-top: 0px;width: 100%;margin-top: -20px;min-height: 769px;">
+    <section class="services-section-main" style="z-index: 2;background: #022a54;position: relative;width: 100%;margin-top: -20px;padding-top: 40px;padding-bottom: 220px;">
         <h1 class="text-center" data-aos="fade-up" style="color: var(--bs-gray-100);padding-top: 31px;">CORE CAPABILITIES</h1>
-        <div class="container" data-aos="fade-up" data-aos-delay="400" style="padding-top: 105px;">
+        <div class="container" id="capability-tiles" data-aos="fade-up" data-aos-delay="400" style="padding-top: 105px;">
             <div class="row justify-content-center">
                 <div class="col-md-4 services-border" id="web-button" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;height: 100%;width: 100%;margin: 0px;padding: 0px; display:block"><i class="material-icons icon-shadows" style="color: var(--bs-blue);font-size: 50px;text-align: center;margin-bottom: 13px;">dns</i>
                         <h3 style="color: var(--bs-gray-300);">CLOUD DATA PLATFORM ENGINEERING</h3>
@@ -86,17 +86,17 @@ menu
                 <div class="col-md-4 services-border" id="photo-button" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;height: 100%;width: 100%;"><i class="material-icons icon-shadows" style="color: var(--bs-blue);font-size: 50px;text-align: center;margin-bottom: 13px;">layers</i>
                         <h3 style="color: var(--bs-gray-300);">DATA LAKE &amp; LAKEHOUSE ARCHITECTURE</h3>
                     </a></div>
-                <div class="col-md-4 services-border" id="ad-button" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;width: 100%;height: 100%;"><i class="material-icons icon-shadows" style="color: var(--bs-blue);font-size: 50px;text-align: center;margin-bottom: 13px;">sync_alt</i>
-                        <h3 style="color: var(--bs-gray-300);">ETL / ELT &amp; DATA PIPELINES</h3>
-                    </a></div>
-                <div class="col-md-4 services-border" id="it-button" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;width: 100%;height: 100%;"><i class="material-icons icon-shadows" style="color: var(--bs-blue);font-size: 50px;text-align: center;margin-bottom: 13px;">cloud_upload</i>
+                <div class="col-md-4 services-border" id="ad-button" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;width: 100%;height: 100%;"><i class="material-icons icon-shadows" style="color: var(--bs-blue);font-size: 50px;text-align: center;margin-bottom: 13px;">cloud_upload</i>
                         <h3 style="color: var(--bs-gray-300);">DATA MIGRATION &amp; MODERNIZATION</h3>
                     </a></div>
-                <div class="col-md-4 services-border" id="reg-button" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;width: 100%;height: 100%;"><i class="material-icons icon-shadows" style="color: var(--bs-blue);font-size: 50px;text-align: center;margin-bottom: 13px;">account_tree</i>
-                        <h3 style="color: var(--bs-gray-300);">WORKFLOW ORCHESTRATION</h3>
-                    </a></div>
-                <div class="col-md-4 services-border" id="reg-button-1" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;width: 100%;height: 100%;"><i class="material-icons icon-shadows" style="color: #0d6efd;font-size: 50px;text-align: center;margin-bottom: 13px;">fact_check</i>
+                <div class="col-md-4 services-border" id="it-button" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;width: 100%;height: 100%;"><i class="material-icons icon-shadows" style="color: #0d6efd;font-size: 50px;text-align: center;margin-bottom: 13px;">fact_check</i>
                         <h3 style="color: var(--bs-gray-300);">DATA QUALITY &amp; RELIABILITY</h3>
+                    </a></div>
+                <div class="col-md-4 services-border" id="reg-button" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;width: 100%;height: 100%;"><i class="material-icons icon-shadows" style="color: var(--bs-blue);font-size: 50px;text-align: center;margin-bottom: 13px;">insights</i>
+                        <h3 style="color: var(--bs-gray-300);">ANALYTICS, DASHBOARDS &amp; BI</h3>
+                    </a></div>
+                <div class="col-md-4 services-border" id="reg-button-1" style="text-align: center;margin-bottom: 50px;width: 400px;"><a href="core-services.html" style="text-decoration: none;display: block;width: 100%;height: 100%;"><i class="material-icons icon-shadows" style="color: var(--bs-blue);font-size: 50px;text-align: center;margin-bottom: 13px;">business_center</i>
+                        <h3 style="color: var(--bs-gray-300);">DATA STRATEGY &amp; CONSULTING</h3>
                     </a></div>
             </div>
         </div>
@@ -108,7 +108,7 @@ menu
     </svg>
 </div></div>
     </section>
-    <section class="d-xl-flex justify-content-xl-center align-items-xl-center reach-section" id="main-picture-section" style="z-index: 2;background: var(--bs-blue);position: relative;padding: 0px;padding-top: 20px;width: 100%;margin-top: -20px;min-height: 825px;color: var(--bs-blue);height: 1139px;">
+    <section class="d-xl-flex justify-content-xl-center align-items-xl-center reach-section" id="main-picture-section" style="z-index: 2;background: var(--bs-blue);position: relative;width: 100%;margin-top: -20px;color: var(--bs-blue);padding: 60px 0;">
         <div class="container d-md-flex d-xl-flex justify-content-xl-center align-items-xl-center" id="howitworks" style="height: 100%;">
             <div class="row d-md-flex justify-content-md-center" style="height: 100%;color: rgb(13, 110, 253);text-align: left;">
                 <div class="col-md-6 d-md-flex flex-column order-last justify-content-md-center align-items-md-center order-md-first order-lg-first order-xl-first order-xxl-first" id="text-section-1" style="margin: 0px;padding: 64px;text-align: center;">
@@ -136,6 +136,11 @@ menu
         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill1"></path>
     </svg>
 </div></section>
+    <section class="text-center" style="background: #000407;padding: 50px 24px;position: relative;">
+        <span class="section-eyebrow">OUR PRODUCTS</span>
+        <p class="section-lead" style="margin-bottom: 24px;">IMS Tracker, our upcoming solution for real-time data and asset tracking, is currently in development.</p>
+        <a class="btn-stellar d-inline-flex justify-content-center align-items-center" role="button" href="Products.html">VIEW PRODUCTS</a>
+    </section>
     <footer id="footerpad" style="background: #000407;">
         <div class="container">
             <div class="row">
