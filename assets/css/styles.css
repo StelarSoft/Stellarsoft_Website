@@ -303,9 +303,18 @@ html {
 
 /* ---- Mobile optimization ---- */
 
+#title-scroll {
+  font-size: clamp(26px, 9vw, 49.88px) !important;
+}
+
 @media (max-width: 768px) {
   .custom-shape-divider-bottom-1643855740 svg {
     height: 10vh !important;
+  }
+
+  section:has(.custom-shape-divider-bottom-1643855740) {
+    height: auto !important;
+    min-height: 100px !important;
   }
 
   #section-who,
@@ -334,6 +343,14 @@ html {
 
   #title-scroll {
     margin-top: 20px !important;
+  }
+
+  h1 {
+    font-size: clamp(26px, 6vw, 38px) !important;
+  }
+
+  h2 {
+    font-size: clamp(20px, 5vw, 28px) !important;
   }
 
   .services-border {
@@ -372,8 +389,14 @@ html {
     height: 340px !important;
   }
 
-  #title-scroll {
-    font-size: 34px !important;
+  #fit-card {
+    border-radius: 22px !important;
+    padding: 24px 20px !important;
+  }
+
+  #fit-card h2 {
+    margin-top: 0 !important;
+    font-size: 22px !important;
   }
 
   .section-lead {
@@ -392,6 +415,13 @@ html {
     padding-bottom: 150px !important;
   }
 
+  section:has(.hide-on-mobile) {
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   #hero-logo-section {
     min-height: 320px !important;
   }
@@ -403,10 +433,6 @@ html {
 
   #logo-scroll {
     height: 280px !important;
-  }
-
-  #title-scroll {
-    font-size: 28px !important;
   }
 
   .btn-stellar-lg {
