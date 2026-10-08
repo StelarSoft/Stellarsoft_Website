@@ -97,8 +97,14 @@ body, .navbar-brand, h1, h2, h3 {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 25vh;
+  height: 140px;
   /*bottom: 24px;*/
+}
+
+section:has(> .custom-shape-divider-bottom-1643855740),
+section:has(> div > .custom-shape-divider-bottom-1643855740) {
+  height: auto !important;
+  min-height: 140px;
 }
 
 .custom-shape-divider-bottom-1643855740 .shape-fill1 {
@@ -141,12 +147,39 @@ html {
 
 /* ---- Capability-statement content components ---- */
 
+#navBar {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .navbar .nav-link {
   transition: color 0.2s ease;
 }
 
 .navbar .nav-link:hover {
   color: var(--stellar-accent) !important;
+}
+
+#navBar .nav-link {
+  font-size: 15px;
+  padding: 8px 14px;
+}
+
+.nav-cta {
+  padding: 8px 24px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  #navBar .navbar-nav {
+    text-align: center;
+  }
+
+  #navBar .nav-cta-wrap {
+    justify-content: center !important;
+    padding: 12px 0 4px;
+  }
 }
 
 .section-eyebrow {
@@ -230,8 +263,56 @@ html {
   margin: 0;
 }
 
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.trust-strip span {
+  color: var(--bs-gray-400);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0 6px;
+}
+
+.trust-strip span:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--stellar-accent);
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.tech-stack-grid {
+  column-count: 3;
+  column-gap: 40px;
+}
+
+@media (max-width: 992px) {
+  .tech-stack-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-stack-grid {
+    column-count: 1;
+  }
+}
+
 .stack-group {
   margin-bottom: 28px;
+  break-inside: avoid;
 }
 
 .stack-group h4 {
@@ -439,5 +520,36 @@ html {
     padding: 16px 32px;
     font-size: 17px;
   }
+}
+
+.stellar-accordion .accordion-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(23, 201, 201, 0.18);
+  border-radius: 12px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.stellar-accordion .accordion-button {
+  background: transparent;
+  color: var(--bs-gray-100);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: none;
+}
+
+.stellar-accordion .accordion-button:not(.collapsed) {
+  background: rgba(23, 201, 201, 0.08);
+  color: var(--stellar-accent);
+  box-shadow: none;
+}
+
+.stellar-accordion .accordion-button::after {
+  filter: invert(1) grayscale(1) brightness(2);
+}
+
+.stellar-accordion .accordion-body {
+  background: transparent;
+  color: var(--bs-gray-400);
 }
 
